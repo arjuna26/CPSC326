@@ -1,0 +1,64 @@
+#----------------------------------------------------------------------
+# HW-6 Test Program: Nested If
+#----------------------------------------------------------------------
+
+void main() {
+
+  var x = 0
+  var y = 1
+  var z = 2
+
+  print("test 1: ")
+  if x <= 0 {
+    if y <= 1 {
+      if z > 2 {
+        println("fail")
+      }
+      else {
+        println("pass")
+      }
+    }
+  }
+
+  print("test 2: ")
+  if x <= y {
+    if y > z {
+      println("fail 1")
+    }
+    else {
+      if (y > x) and (y > z) {
+        println("fail 2")
+      }
+      else {
+        if (y > x) and (x < z) {
+          println("pass")
+        }
+      }
+    }
+  }
+
+  print("test 3: ")
+  if x <= y {
+    if y > z {
+      println("fail 1")
+    }
+    else {
+      if (y > x) and (y > z) {
+        println("fail 2")
+      }
+      else {
+        if false {
+          println("fail 3")
+        }
+        else {
+          println("pass")
+        }
+      }
+    }
+  }
+
+}
+
+
+        
+

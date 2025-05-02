@@ -1,0 +1,29 @@
+#----------------------------------------------------------------------
+# HW-6 Test Program: Compute n catalan numbers (includes fac)
+#----------------------------------------------------------------------
+
+int fac(n: int) {
+  if n <= 0 {
+    return 1
+  }
+  return n * fac(n - 1)
+}
+
+int catalan_number(n: int) {
+  if n < 0 {
+    # only defined for n >= 0
+    return 0
+  }
+  return fac(2 * n) / (fac(n + 1) * fac(n))
+}
+
+# prints : 1 , 1 , 2 , 5 , 14 , 42 , 132 , (overflow)
+void main() {
+  print("Enter the number of catalan numbers to print: ")
+  var m: int = int_val(readln())
+  for n from 0 to m - 1 {
+    var c: int = catalan_number(n)
+    println("Catalan number " + str_val(n) + " = " + str_val(c))
+  }
+}
+

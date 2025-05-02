@@ -1,0 +1,142 @@
+#----------------------------------------------------------------------
+# HW-6 Test Program: Basic Tic-Tac-Toe Game
+#----------------------------------------------------------------------
+
+#----------------------------------------------------------------------
+# Representation of a tic-tac-toe board and helper functions 
+#----------------------------------------------------------------------
+
+struct board {
+  cells: [string]  
+}
+
+string cell(b: board, c: int) {
+  return b.cells[c]
+}
+
+bool has_val(b: board, c: int, p: string) {
+  return cell(b, c) == p
+}
+
+string set(b: board, c: int, p: string) {
+  b.cells[c] = p  
+}
+
+bool valid(b: board, c: int) {
+  return (c >= 0) and (c < size(b.cells)) 
+}
+
+bool empty(b: board, c: int) {
+  return b.cells[c] == " "
+}
+
+
+#----------------------------------------------------------------------
+# Win, lose and draw
+#----------------------------------------------------------------------
+
+bool all_three(b: board, c1: int, c2: int, c3: int, p: string) {
+  return has_val(b, c1, p) and has_val(b, c2, p) and has_val(b, c3, p)
+}
+
+bool win(b: board, p: string) {
+  # check rows and columns
+  for i from 0 to 2 {
+    if all_three(b, i * 3, (i * 3) + 1, (i * 3) + 2, p) {
+      return true
+    }
+    else if all_three(b, i, i + 3, i + 6, p)  {
+      return true
+    }
+  }
+  # check diagonals
+  if all_three(b, 0, 4, 8, p) {
+    return true
+  }
+  else if all_three(b, 2, 4, 6, p) {
+    return true
+  }
+  return false
+}
+
+bool draw(b: board) {
+  for i from 0 to 8 {
+    if empty(b, i) {
+      return false
+    }
+  }
+  return true
+}
+
+
+#----------------------------------------------------------------------
+# Pretty print a given board
+#----------------------------------------------------------------------
+
+bool display(b: board) {
+  var d = new board(new string[9])
+  for i from 0 to 8 {
+    set(d, i, cell(b, i))
+    if empty(b, i) {
+      set(d, i, str_val(i))
+    }
+  }
+  println("   " + cell(d, 0) + " | " + cell(d, 1) + " | " + cell(d, 2) + " ")
+  println("  ---+---+---")
+  println("   " + cell(d, 3) + " | " + cell(d, 4) + " | " + cell(d, 5) + " ")
+  println("  ---+---+---")
+  println("   " + cell(d, 6) + " | " + cell(d, 7) + " | " + cell(d, 8) + " ")  
+}
+
+
+#----------------------------------------------------------------------
+# The driver program
+#----------------------------------------------------------------------
+
+void main() {
+  # create an initialize a board
+  var b: board = new board(new string[9])
+  for i from 0 to 8 {
+    set(b, i, " ")
+  }
+
+  # player X starts
+  var p: string = "X"
+
+  # keep playing until win, lose, or draw
+  while (not win(b, "X")) and (not win(b, "Y")) and (not draw(b)) {
+    # display current game and prompt for move
+    display(b)  
+    print("Please select a cell for player " + p + ": ")
+    var c = int_val(readln())
+
+    # check if invalid valid move
+    if (not valid(b, c)) or (not empty(b, c)) {
+      println("Invalid choice, please try again")
+    }
+    
+    # valid move
+    else {
+      set(b, c, p)
+      # switch players      
+      if p == "X" {
+        p = "Y"
+      }
+      else {
+        p = "X"
+      }
+    }
+  }
+
+  # display the final board state and game status
+  display(b)
+  if win(b, "X") {
+    println("X wins!")
+  }
+  else if win(b, "Y") {
+    println("Y wins!")
+  }
+  else {
+    println("Draw!")
+  }
+}

@@ -1,0 +1,62 @@
+#----------------------------------------------------------------------
+# HW-6 Test Program: Arrays
+#----------------------------------------------------------------------
+
+[int] reverse_array(xs: [int]) {
+  var n: int = size(xs)
+  var ys: [int] = new int[n]
+  for i from 0 to n - 1 {
+    ys[(n-1)-i] = xs[i]
+  }
+  return ys
+}
+
+void shuffle_array(xs: [int]) {
+  var n: int = size(xs)
+  for i from 0 to n-2 {
+    var tmp: int = xs[i]
+    xs[i] = xs[i+1]
+    xs[i+1] = tmp
+    i = i + 1
+  }
+}
+
+void print_array(xs: [int]) {
+  var n: int = size(xs)
+  print("[")
+  for i from 0 to n-1 {
+    print(xs[i])
+    if (i != (n-1)) {
+      print(", ")
+    }
+  }
+  println("]")
+}
+
+
+#----------------------------------------------------------------------
+# main should print:
+#   [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#   [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+#   [9, 10, 7, 8, 5, 6, 3, 4, 1, 2]
+#   [9, 10, 7, 8, 5, 6, 3, 4, 1, 2]
+#----------------------------------------------------------------------
+void main() {
+  var n: int = 10
+  var a1: [int] = new int[n]
+  for i from 0 to n - 1 {
+    a1[i] = i + 1
+  }
+  print("should be [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]: ")
+  print_array(a1)
+  var a2: [int] = reverse_array(a1)
+  print("should be [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]: ")
+  print_array(a2)
+  var a3: [int] = a2
+  shuffle_array(a3)
+  print("should be [9, 10, 7, 8, 5, 6, 3, 4, 1, 2]: ")
+  print_array(a3)
+  print("should be [9, 10, 7, 8, 5, 6, 3, 4, 1, 2]: ")
+  print_array(a2)
+}
+

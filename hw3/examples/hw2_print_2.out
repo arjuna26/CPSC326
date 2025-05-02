@@ -1,0 +1,29 @@
+
+struct node {
+  value: int, 
+  next: node
+}
+
+struct bst_node {
+  val: double, 
+  left: bst_node, 
+  right: bst_node
+}
+
+struct row {
+  atts: [string], 
+  vals: [int]
+}
+
+struct empty {
+}
+
+int f() {
+}
+
+int g(x: int, y: int) {
+}
+
+void main() {
+}
+

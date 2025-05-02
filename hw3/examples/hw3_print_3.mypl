@@ -1,0 +1,42 @@
+
+
+int function(x:int,y :     int  ) { x = x
++y x=x-y return x }
+
+struct node {val :int ,
+ next: node }
+
+       void main(){
+if true { x = 1 y= 2
+}else if false { println("blah") println("hah")
+}
+else {x= y}
+
+
+t = x*y+z
+t = (u*v) + z(u*v) + w
+
+
+var1 = 0- x*y
+var2 = not (x and y) or (y and x)
+var3 = x
+var4 = not x
+
+
+
+
+# Hello World
+
+              var s:string 
+
+        =
+
+"Hello World!\n"
+
+print (
+             s
+)
+
+}
+
+

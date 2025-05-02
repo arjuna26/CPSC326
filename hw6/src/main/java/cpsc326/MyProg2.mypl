@@ -1,0 +1,87 @@
+#----------------------------------------------------------------------
+# Geometry Calculator - Simple program to calculate areas and volumes
+# Author: Arjuna Herbst
+#----------------------------------------------------------------------
+
+# Calculate area of a rectangle
+double rectangle_area(length: double, width: double) {
+  return length * width
+}
+
+# Calculate area of a circle
+double circle_area(radius: double) {
+  var pi: double = 3.14159
+  return pi * radius * radius
+}
+
+# Calculate area of a triangle
+double triangle_area(base: double, height: double) {
+  return 0.5 * base * height
+}
+
+# Calculate volume of a box
+double box_volume(length: double, width: double, height: double) {
+  return length * width * height
+}
+
+# Calculate volume of a sphere
+double sphere_volume(radius: double) {
+  var pi: double = 3.14159
+  return (4.0 / 3.0) * pi * radius * radius * radius
+}
+
+# Format a result with label
+void print_result(label: string, value: double) {
+  println(label)
+  println(value)
+}
+
+# Main function
+void main() {
+  # Rectangle calculations
+  var rect_l: double = 5.0
+  var rect_w: double = 3.0
+  var rect_area: double = rectangle_area(rect_l, rect_w)
+  print_result("Rectangle area (5.0 × 3.0)", rect_area)
+  
+  # Circle calculations
+  var circle_r: double = 4.0
+  var circ_area: double = circle_area(circle_r)
+  print_result("Circle area (radius 4.0)", circ_area)
+  
+  # Triangle calculations
+  var tri_base: double = 6.0
+  var tri_height: double = 4.0
+  var tri_area: double = triangle_area(tri_base, tri_height)
+  print_result("Triangle area (base 6.0, height 4.0)", tri_area)
+  
+  # Box calculations
+  var box_l: double = 2.0
+  var box_w: double = 3.0
+  var box_h: double = 4.0
+  var box_vol: double = box_volume(box_l, box_w, box_h)
+  print_result("Box volume (2.0 × 3.0 × 4.0)", box_vol)
+  
+  # Sphere calculations
+  var sphere_r: double = 3.0
+  var sphere_vol: double = sphere_volume(sphere_r)
+  print_result("Sphere volume (radius 3.0)", sphere_vol)
+  
+  # Combined calculation example
+  var combined_area: double = rect_area + circ_area
+  print_result("Combined rectangle and circle area", combined_area)
+  
+  # Compare areas
+  println("\nArea Comparisons:")
+  if (rect_area > circ_area) {
+    println("Rectangle area is greater than circle area")
+  } else {
+    println("Circle area is greater than or equal to rectangle area")
+  }
+  
+  if (tri_area > rect_area) {
+    println("Triangle area is greater than rectangle area")
+  } else {
+    println("Rectangle area is greater than or equal to triangle area")
+  }
+}

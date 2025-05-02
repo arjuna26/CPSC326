@@ -1,0 +1,30 @@
+#----------------------------------------------------------------------
+# HW-6 Test Program: Mix of Arrays and Structs
+#----------------------------------------------------------------------
+
+struct TreeNode {
+  val: int, 
+  children: [TreeNode]
+}
+
+void main() {
+  var root: TreeNode = new TreeNode(20, new TreeNode[2])
+  root.children[0] = new TreeNode(10, null)
+  root.children[1] = new TreeNode(30, null)
+  root.children[0].children = new TreeNode[2]
+  root.children[0].children[0] = new TreeNode(null, null)
+  root.children[0].children[1] = new TreeNode(null, null)
+  root.children[0].children[0].val = 5
+  root.children[0].children[1].val = 15
+
+  print("should be 20: ")
+  println(root.val)
+  print("should be 10: ")
+  println(root.children[0].val)
+  print("should be 30: ")
+  println(root.children[1].val)
+  print("should be 5: ")
+  println(root.children[0].children[0].val)
+  print("should be 15: ")   
+  println(root.children[0].children[1].val)
+}

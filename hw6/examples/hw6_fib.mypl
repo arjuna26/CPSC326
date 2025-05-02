@@ -1,0 +1,29 @@
+#----------------------------------------------------------------------
+# HW-6 Test Program: Fibonacci Numbers
+#----------------------------------------------------------------------
+
+void print_result(n: int, r: int) {
+  println("fib(" + str_val(n) + ") = " + str_val(r))
+}
+
+int fib(x: int) {
+  if x <= 1 {
+    return x
+  }
+  else {
+    return fib(x - 2) + fib(x - 1)
+  }
+}
+
+
+# first 19 fib numbers: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144,
+#                       233, 377, 610, 987, 1597, 2584
+
+void main() {
+  var n: int = 0
+  var m: int = 32
+  while n < m {
+    print_result(n, fib(n))
+    n = n + 1
+  }
+}

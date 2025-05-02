@@ -1,0 +1,69 @@
+#----------------------------------------------------------------------
+# HW-6 Test Program: Conditionals (loops and ifs)
+#----------------------------------------------------------------------
+
+void main() {
+  var x: int = 10
+  while x > 0 {
+    x = x - 1
+  }
+  println("Should be 0: " + str_val(x))
+
+  print("Should print else case: ")
+  if (x != 0) or (x < 0) {
+    println("if case")
+  }
+  else {
+    println("else case")
+  }
+
+  print("Should print else-if case: ")
+  if x > 0 {
+    println("if case")
+  }
+  else if x <= 0 {
+    println("else-if case")
+  }
+  else {
+    println("else case")
+  }
+
+  print("Should print else case: ")
+  if x > 0 {
+    println("if case")
+  }
+  else if x < 0 {
+    println("else-if case")
+  }
+  else {
+    println("else case")
+  }
+
+  x = null
+
+  print("Should print oops: ")
+  if x != null {
+    println("yes")
+  }
+  else if x == null {
+    println("oops")
+  }
+
+  # basic for loop
+  print("should be 1 2 ... 6: ")
+  for i from 1 to 2*3 {
+    print(i)
+    print(" ")
+  }
+  print("\n")
+
+  # a nested for loop
+  println("should be multiplication table up to 3's...: ")
+  for i from 1 to 3 {
+    for j from 1 to 3 {
+      print("  " + str_val(i) + " x " + str_val(j) + " is: ")
+      println(i * j)
+    }
+  }
+
+}

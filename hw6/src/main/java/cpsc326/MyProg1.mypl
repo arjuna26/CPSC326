@@ -1,0 +1,93 @@
+#----------------------------------------------------------------------
+# Simple binary search and two sum implementation
+# Author: Arjuna Herbst
+#----------------------------------------------------------------------
+
+int binary_search(arr: [int], target: int, low: int, high: int) {
+  if low > high {
+    return 1
+  }
+  
+  var mid: int = low + ((high - low) / 2)
+  
+  if arr[mid] == target {
+    return mid
+  } else if arr[mid] > target {
+    return binary_search(arr, target, low, mid - 1)
+  } else {
+    return binary_search(arr, target, mid + 1, high)
+  }
+}
+
+# Function to find if there are two numbers in the sorted array that sum to target
+bool has_two_sum(arr: [int], size: int, target: int) {
+  var left: int = 0
+  var right: int = size - 1
+  
+  while left < right {
+    var sum: int = arr[left] + arr[right]
+    
+    if sum == target {
+      return true
+    } else if sum < target {
+      left = left + 1
+    } else {
+      right = right - 1
+    }
+  }
+  
+  return false
+}
+
+void main() {
+  # Create and initialize a sorted array
+  var nums: [int] = new int[10]
+  nums[0] = 1
+  nums[1] = 3
+  nums[2] = 5
+  nums[3] = 7
+  nums[4] = 9
+  nums[5] = 11
+  nums[6] = 13
+  nums[7] = 15
+  nums[8] = 17
+  nums[9] = 19
+  
+  print("Array elements: ")
+  for i from 0 to 9 {
+    print(nums[i])
+    print(" ")
+  }
+  print("\n")
+  
+  # Test binary search
+  print("Binary search for 7 at index: ")
+  print(binary_search(nums, 7, 0, 9))
+  print("\n")
+  
+  print("Binary search for 10 at index: ")
+  print(binary_search(nums, 10, 0, 9))
+  print("\n")
+  
+  # Test two sum
+  var target1: int = 20
+  var result1: bool = has_two_sum(nums, 10, target1)
+  print("Target sum ")
+  print(target1)
+  if result1 {
+    print(" found")
+  } else {
+    print(" not found")
+  }
+  print("\n")
+  
+  var target2: int = 100
+  var result2: bool = has_two_sum(nums, 10, target2)
+  print("Target sum ")
+  print(target2)
+  if result2 {
+    print(" found")
+  } else {
+    print(" not found")
+  }
+}

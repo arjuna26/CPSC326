@@ -1,0 +1,24 @@
+#----------------------------------------------------------------------
+# HW-6 Test Program: Simple Recursive Factorial Function
+#----------------------------------------------------------------------
+
+int fac(n: int) {
+  if n <= 0 {
+    return 1
+  }
+  else {
+    var r: int = n * fac(n - 1)
+    return r
+  }
+}
+
+
+void main() {
+  var v: int = 12
+  var r: int = fac(v)
+  println("the factorial of " + str_val(v) + " is " + str_val(r))
+}
+
+
+
+

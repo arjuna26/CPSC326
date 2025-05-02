@@ -1,0 +1,30 @@
+#----------------------------------------------------------------------
+# HW-6 Test Program: While loops
+#----------------------------------------------------------------------
+
+void main() {
+  var x = 1
+  var y = 1
+  var z = 1
+  var c = 4
+
+  while x < c {
+    while y < c {
+      while z < c {
+        print(x)
+        print(", ")
+        print(y)
+        print(", ")
+        print(z)
+        print("\n")
+        z = z + 1
+      }
+      y = y + 1
+      z = 1
+    }
+    x = x + 1
+    y = 1
+  }
+
+}
+

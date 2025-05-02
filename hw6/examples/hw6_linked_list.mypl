@@ -1,0 +1,40 @@
+#----------------------------------------------------------------------
+a# HW-6 Test Program: Basic Linked List
+#----------------------------------------------------------------------
+
+struct node {
+  val: int, 
+  next: node
+}
+
+
+void main() {
+
+  # creates a linked list: [10, 20, 30, 40, 50]
+
+  var head: node = null
+  var len: int = 5
+
+  for i from 0 to len - 1 {
+    var ptr: node = new node(null, null)
+    ptr.val = (len - i) * 10
+    ptr.next = head
+    head = ptr
+  }
+
+  # prints the list
+
+  print("[")
+  var i: int = 0
+  var ptr: node = head
+  while i < len {
+    print(ptr.val)
+    if i < (len - 1) {
+      print(", ")
+    }
+    ptr = ptr.next
+    i = i + 1
+  }
+  print("]\n")
+
+}

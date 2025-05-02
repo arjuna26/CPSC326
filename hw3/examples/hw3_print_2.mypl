@@ -1,0 +1,15 @@
+# comments are ignored when printing
+struct node{value: int, next:node} 
+int f(){} struct bst_node {val:double,left:bst_node,right:bst_node}
+int g(x:int,y:int){} struct
+  row
+    {atts:[
+string
+],vals:[int]
+ }
+void
+main
+(
+) {
+}
+struct empty{}

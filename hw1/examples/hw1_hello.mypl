@@ -1,0 +1,5 @@
+# simple hello world program
+
+void main() {
+  println("Hello World!" && "Hi")
+}

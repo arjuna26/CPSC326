@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="cpsc326.ASTParserSyntaxTests" time="0.206" tests="84" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\arjun\OneDrive\Desktop\Gonzaga_2024-25\second sem\CPSC326\hw3-arjuna26\target\test-classes;C:\Users\arjun\OneDrive\Desktop\Gonzaga_2024-25\second sem\CPSC326\hw3-arjuna26\target\classes;C:\Users\arjun\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\arjun\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\arjun\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\arjun\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\arjun\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\arjun\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\arjun\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\arjun\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\arjun\.m2\repository\net\sourceforge\argparse4j\argparse4j\0.9.0\argparse4j-0.9.0.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\arjun\AppData\Local\Temp\surefire6163990633514610063\surefirebooter-20250429110802405_3.jar C:\Users\arjun\AppData\Local\Temp\surefire6163990633514610063 2025-04-29T11-08-02_248-jvmRun1 surefire-20250429110802405_1tmp surefire_0-20250429110802405_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\arjun\OneDrive\Desktop\Gonzaga_2024-25\second sem\CPSC326\hw3-arjuna26\target\test-classes;C:\Users\arjun\OneDrive\Desktop\Gonzaga_2024-25\second sem\CPSC326\hw3-arjuna26\target\classes;C:\Users\arjun\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\arjun\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\arjun\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\arjun\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\arjun\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\arjun\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\arjun\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\arjun\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\arjun\.m2\repository\net\sourceforge\argparse4j\argparse4j\0.9.0\argparse4j-0.9.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\arjun"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\arjun\OneDrive\Desktop\Gonzaga_2024-25\second sem\CPSC326\hw3-arjuna26"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\arjun\AppData\Local\Temp\surefire6163990633514610063\surefirebooter-20250429110802405_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.4+7-LTS"/>
+    <property name="user.name" value="arjun"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.4+7"/>
+    <property name="localRepository" value="C:\Users\arjun\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\arjun\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.4"/>
+    <property name="user.dir" value="C:\Users\arjun\OneDrive\Desktop\Gonzaga_2024-25\second sem\CPSC326\hw3-arjuna26"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\arjun\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\arjun\bin;C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Users\arjun\AppData\Local\Microsoft\WindowsApps;C:\Users\arjun\AppData\Local\atom\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\MATLAB\R2020a\bin;C:\Program Files\MariaDB Shell;C:\Program Files\Amazon\AWSCLIV2;C:\Users\arjun\OneDrive\Desktop\CS Projects\FileBrowser;C:\Users\arjun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\Scripts;C:\Program Files\Docker\Docker\resources\bin;C:\Users\arjun\OneDrive\Desktop\Gonzaga_2024-25\CPSC450\code\apache-maven-3.9.9\bin;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Users\arjun\AppData\Local\Programs\Python\Python313\Scripts;C:\Users\arjun\AppData\Local\Programs\Python\Python313;C:\Users\arjun\AppData\Local\Programs\Python\Launcher;C:\Users\arjun\scoop\shims;C:\Users\arjun\AppData\Local\Microsoft\WindowsApps;C:\Users\arjun\AppData\Local\GitHubDesktop\bin;C:\Users\arjun\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\mingw64\bin;C:\Users\arjun\AppData\Local\Programs\MiKTeX\miktex\bin\x64;C:\Users\arjun\go\bin;C:\Users\arjun\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\arjun\AppData\Roaming\npm;C:\Users\arjun\AppData\Local\Microsoft\WindowsApps;C:\Users\arjun\OneDrive\Desktop\Gonzaga_2024-25\second sem\CPSC326\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Users\arjun\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\arjun\AppData\Local\Microsoft\WinGet\Links;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.4+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="moreInvolvedWhileStatement" classname="cpsc326.ASTParserSyntaxTests" time="0.037"/>
+  <testcase name="basicPathExpressions" classname="cpsc326.ASTParserSyntaxTests" time="0.002"/>
+  <testcase name="functionWithMultipleBaseTypeParams" classname="cpsc326.ASTParserSyntaxTests" time="0.003"/>
+  <testcase name="expressionWithBadArrayIDRvalue" classname="cpsc326.ASTParserSyntaxTests" time="0.015"/>
+  <testcase name="nestedStatements" classname="cpsc326.ASTParserSyntaxTests" time="0.002"/>
+  <testcase name="missingParameterInField" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="simpleForStatement" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="missingIfBody" classname="cpsc326.ASTParserSyntaxTests" time="0.002"/>
+  <testcase name="variableDefinitionsWithOutTypeAnnotations" classname="cpsc326.ASTParserSyntaxTests" time="0.003"/>
+  <testcase name="returnWithoutExpression" classname="cpsc326.ASTParserSyntaxTests" time="0.002"/>
+  <testcase name="variableDeclWithoutIdentifier" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="missingFunctionCloseBrace" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="forWithoutLoopTo" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="missingFunctionCloseParen" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="variableDeclWithMissingColon" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="missingStructCloseBrace" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="emptyFunction" classname="cpsc326.ASTParserSyntaxTests" time="0.0"/>
+  <testcase name="missingStructID" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="basicNewExpressions" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="expressionWithBadNonArrayIDRvalue" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="assignWithBadNonArrayLvalue" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="assignWithBadArrayLvalue" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="structWithBaseTypeFields" classname="cpsc326.ASTParserSyntaxTests" time="0.0"/>
+  <testcase name="emptyInput" classname="cpsc326.ASTParserSyntaxTests" time="0.0"/>
+  <testcase name="mixOfStructsAndFunctions" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="functionOneBaseTypeParam" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="expressionWithTooFewClosingParens" classname="cpsc326.ASTParserSyntaxTests" time="0.002"/>
+  <testcase name="mixOfStatements" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="multipleIfElses" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="elseWithNoBody" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="elseWithNoIf" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="nonTerminatingWhileBody" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="functionBaseValueReturnType" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="forWithoutLoopFromExpression" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="basicLogicalExpressions" classname="cpsc326.ASTParserSyntaxTests" time="0.003"/>
+  <testcase name="forWithoutLoopInformation" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="missingWhileBody" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="variableDeclarations" classname="cpsc326.ASTParserSyntaxTests" time="0.0"/>
+  <testcase name="missingFunctionOpenBrace" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="missingFunctionOpenParen" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="missingFunctionParamID" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="assignWithMissingExpression" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="assignWithMissingAssignOp" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="simpleWhileStatement" classname="cpsc326.ASTParserSyntaxTests" time="0.0"/>
+  <testcase name="basicFunctionCalls" classname="cpsc326.ASTParserSyntaxTests" time="0.0"/>
+  <testcase name="missingColonInField" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="forWithoutLoopBody" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="forWithoutLoopFrom" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="basicArithmeticExpressions" classname="cpsc326.ASTParserSyntaxTests" time="0.0"/>
+  <testcase name="missingFunctionParamType" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="missingWhileExpression" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="multipleIfs" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="functionNonBaseValueReturnType" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="returnVariousLiterals" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="expressionWithTooManyOperands" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="variableDefinitionsWithTypeAnnotations" classname="cpsc326.ASTParserSyntaxTests" time="0.0"/>
+  <testcase name="variableDefinitionMissingExpression" classname="cpsc326.ASTParserSyntaxTests" time="0.0"/>
+  <testcase name="elseOutOfOrder" classname="cpsc326.ASTParserSyntaxTests" time="0.0"/>
+  <testcase name="missingFunctionParamColon" classname="cpsc326.ASTParserSyntaxTests" time="0.0"/>
+  <testcase name="missingFunctionParamComma" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="missingIfExpression" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="forWithNonTerminatedLoopBody" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="expressionWithMissingOperand" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="forStatementWithNonLiteralRange" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="simpleIfWithElse" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="missingStructOpenBrace" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="bracesWithoutStructOrFunction" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="functionWithMulitpleNonBaseTypeParams" classname="cpsc326.ASTParserSyntaxTests" time="0.0"/>
+  <testcase name="basicRelationalExpressions" classname="cpsc326.ASTParserSyntaxTests" time="0.005"/>
+  <testcase name="simpleIfStatement" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="emptyStruct" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="statementOutsideFunctionOrStruct" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="nonTerminatingIfBody" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="variableDeclWithoutVar" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="missingDataTypeInField" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="variableDeclWithoutType" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="forWithoutLoopToExpression" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="missingFunctionReturnType" classname="cpsc326.ASTParserSyntaxTests" time="0.0"/>
+  <testcase name="missingCommaBetweenFields" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="elseWithNoTerminatingBody" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="structWithNonBaseTypeFields" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="elseIfWithNoIf" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="functionOneNonBaseTypeParam" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+  <testcase name="expressionWithTooFewOpeningParens" classname="cpsc326.ASTParserSyntaxTests" time="0.001"/>
+</testsuite>

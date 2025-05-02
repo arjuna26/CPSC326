@@ -1,0 +1,26 @@
+#----------------------------------------------------------------------
+# HW-6 Test Program: MyPL Built-In Functions
+#----------------------------------------------------------------------
+
+
+void main() {
+
+  println("Normal String")
+  print("String with \t tab and newline \n")
+
+  println("Should be '24': " + str_val(int_val("23") + 1))
+
+  println("Should be '3.5': " + str_val(dbl_val("3.25") + 0.25))
+
+  println("Should be '7': " + str_val(size("foo bar")))
+
+  println("Should be 'f': " + get(0, "foo"))
+
+  println("Should be 'o': " + get(1, "foo"))
+
+  print("Enter a string: ")
+  print("Should be what you entered: " + readln())
+  println("")
+
+}
+

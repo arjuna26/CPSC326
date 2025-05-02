@@ -1,0 +1,32 @@
+#----------------------------------------------------------------------
+# HW-6 Test Program: Sum to Prime Example
+#----------------------------------------------------------------------
+
+bool is_prime(n: int) {
+  var m: int = n / 2
+  var v: int= 2
+  while v <= m {
+    var r: int = n / v
+    var p: int = r * v
+    if p == n {
+      return false
+    }
+    v = v + 1
+  }
+  return true
+}
+
+void main() {
+  println("Please enter integer values to sum (prime number to quit)")
+  var sum: int = 0
+  while true {
+    print(">> Enter an int: ")
+    var val: int = int_val(readln())
+    if is_prime(val) {
+      println("The sum is: " + str_val(sum))
+      println("Goodbye!")
+      return null
+    }
+    sum = sum + val
+  }
+}

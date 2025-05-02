@@ -1,0 +1,29 @@
+#----------------------------------------------------------------------
+# HW-6 Test Program: Basic Functions
+#----------------------------------------------------------------------
+
+
+int f1(x: int, y: int) {
+  var z: int = x + y
+  println("... in f1")
+  return z
+}
+
+string f2(x: string) {
+  println("... in f2, x = " + x) 
+  return x + x
+}
+
+string f3(x: string) {
+  x = f2(x)
+  println("... in f3, after f2, x = " + x)
+  return x
+}
+
+void main() {
+  var r1: int = f1(3, 4)
+  println("Should be 7: " + str_val(r1))
+  var r2: string = f3("ab")
+  println("Should be abab: " + r2)
+}
+

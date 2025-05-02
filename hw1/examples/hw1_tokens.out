@@ -1,0 +1,106 @@
+COMMENT " for testing that tokens are being correctly recognized" line 1 column 1
+COMMENT " punctuation tokens:" line 2 column 5
+DOT "." line 3 column 1
+COLON ":" line 3 column 3
+COMMA "," line 3 column 5
+LPAREN "(" line 3 column 8
+RPAREN ")" line 3 column 9
+LBRACKET "[" line 3 column 11
+RBRACKET "]" line 3 column 14
+LBRACE "{" line 3 column 15
+RBRACE "}" line 3 column 18
+COMMENT " arithmetic and relational comparators" line 5 column 2
+PLUS "+" line 6 column 3
+MINUS "-" line 6 column 4
+TIMES "*" line 6 column 6
+DIVIDE "/" line 6 column 8
+ASSIGN "=" line 6 column 10
+EQUAL "==" line 6 column 12
+NOT_EQUAL "!=" line 6 column 15
+LESS "<" line 6 column 18
+LESS_EQ "<=" line 6 column 19
+GREATER_EQ ">=" line 6 column 22
+GREATER ">" line 6 column 25
+COMMENT " all done" line 6 column 27
+COMMENT " some strings:" line 8 column 1
+STRING_VAL "" line 9 column 1
+STRING_VAL "hello!" line 9 column 4
+STRING_VAL "a normal string" line 9 column 13
+STRING_VAL "a 'string' string" line 9 column 31
+STRING_VAL "5 + 4 <= 3 + 6" line 9 column 51
+COMMENT " some numbers" line 11 column 1
+INT_VAL "0" line 13 column 3
+INT_VAL "1" line 13 column 5
+INT_VAL "10" line 13 column 9
+INT_VAL "103" line 13 column 13
+INT_VAL "4321" line 13 column 18
+INT_VAL "1214560" line 13 column 26
+COMMENT " integers" line 13 column 39
+DOUBLE_VAL "0.0" line 15 column 1
+DOUBLE_VAL "0.01" line 15 column 6
+DOUBLE_VAL "3.14159" line 15 column 11
+DOUBLE_VAL "123.0000" line 15 column 19
+DOUBLE_VAL "1234.1110" line 15 column 28
+COMMENT " doubles" line 15 column 39
+COMMENT " reserved words" line 17 column 1
+AND "and" line 18 column 3
+OR "or" line 18 column 7
+NOT "not" line 18 column 10
+STRUCT "struct" line 18 column 14
+VAR "var" line 18 column 22
+IF "if" line 18 column 26
+ELSE "else" line 18 column 29
+WHILE "while" line 18 column 34
+FOR "for" line 18 column 40
+FROM "from" line 18 column 44
+TO "to" line 18 column 49
+NEW "new" line 18 column 55
+BOOL_VAL "true" line 20 column 3
+BOOL_VAL "false" line 20 column 8
+NULL_VAL "null" line 20 column 14
+VOID_TYPE "void" line 20 column 19
+INT_TYPE "int" line 20 column 24
+DOUBLE_TYPE "double" line 20 column 28
+BOOL_TYPE "bool" line 20 column 35
+STRING_TYPE "string" line 20 column 40
+RETURN "return" line 20 column 48
+COMMENT " identifiers" line 22 column 1
+ID "x" line 24 column 3
+ID "y" line 24 column 5
+ID "xyz" line 24 column 7
+ID "x_y_z" line 24 column 11
+ID "x123" line 24 column 17
+ID "foo_1__bar_2__" line 24 column 22
+ID "var100" line 24 column 37
+COMMENT " combos" line 26 column 1
+INT_VAL "5" line 28 column 1
+PLUS "+" line 28 column 2
+LPAREN "(" line 28 column 3
+INT_VAL "3" line 28 column 4
+TIMES "*" line 28 column 5
+INT_VAL "2" line 28 column 6
+RPAREN ")" line 28 column 7
+VAR "var" line 28 column 8
+LPAREN "(" line 28 column 11
+STRUCT "struct" line 28 column 12
+RPAREN ")" line 28 column 18
+LBRACKET "[" line 28 column 19
+NEW "new" line 28 column 20
+INT_TYPE "int" line 28 column 24
+RBRACKET "]" line 28 column 27
+DOUBLE_TYPE "double" line 28 column 28
+TIMES "*" line 28 column 34
+DOUBLE_VAL "4.3" line 28 column 35
+MINUS "-" line 28 column 38
+ID "f" line 28 column 39
+LPAREN "(" line 28 column 40
+INT_VAL "1" line 28 column 41
+RPAREN ")" line 28 column 42
+DOUBLE_VAL "3.4" line 30 column 1
+DOT "." line 30 column 4
+INT_VAL "2" line 30 column 5
+ID "foo4" line 30 column 6
+DOT "." line 30 column 10
+INT_VAL "1" line 30 column 11
+STRING_VAL "hi" line 30 column 12
+EOS "end-of-stream" line 31 column 1

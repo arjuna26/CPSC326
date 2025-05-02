@@ -1,0 +1,101 @@
+
+struct simple_type {
+  v1:
+ int,
+
+ v2  :double,      v3    :       string
+   }
+
+
+int f1() {
+ var x
+:int  =42 
+
+    return
+null
+
+
+x=
+6 x .
+y =  6 x. y .z="hi!"
+y=f ( x ) 
+
+ x= 3+3  x=40/10/2  x= 2+3/4 +5
+
+y= 1+2 
+
+y=(4/2)+2- (3 * 2)
+var
+ s:string 
+      ="foo" + "bar" + "baz"
+ var f:double           = (10.0/2.0)-(3.0+1.14159) }
+
+int add_one ( x   : int    ) {x = x + 1
+return x }
+
+
+string
+add(
+x: string,y
+:    double 
+){
+return x+y }
+
+ void
+main(
+)
+{
+while  x>=1  {
+ x=x - 1
+println ( x )
+}
+
+while (((x or y)and(z))or(not v)and not (v==0) or (not x))
+{
+print(y)
+return 5
+  }
+
+for
+ i
+   from 3*4 to 20  { x = x * i }
+  
+for j from 0 to fac(n){ print(to_str(j)+" ")}
+if (true) {
+println("true") }
+
+if x<  y {
+println("x")
+}else if x > y{print("y")}
+else if x == y
+{ println("x or y")}
+else {
+print("oops")
+}
+
+
+if (x <= y) {
+if (x != y) { print("x or y")
+}else{ print("x") }}
+else if x > y { print("y") }
+else { print(add_one(x)) }
+}
+
+void comp_(foo_bar :int, baz:my_type )    {
+if (foo_bar > 0) or not baz {
+  while foo_bar==1 { println("!") if (baz == nil) { println("")}
+  }
+ }
+}
+ int main(){
+ ptr1=new node()  ptr2 = new node()  ptr3 = new node(v,null) ptr4 = new node[10] ptr5=new int[x*y]
+ptr1.next = ptr2 . ptr2.next d= ptr3 ptr3.next = null
+ptr1.next.val = 3
+ptr1.next = ptr2.next.val
+ptr1.next.next.next.next = ptr2 .  next  . next . next . next
+ptr2.val=ptr1.vals[100]*10
+ptrs[10].next.vals[0]= x [ 10 ] . y . z [ 
+ 1 ] . u [ 0 ] . v
+
+if (new node(1,n)) { ptr1 = new node() ptr2.val = ptr1.val + ptr3.val ptr3 = setVal(new node(1), ptr.val) }
+}

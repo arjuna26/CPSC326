@@ -1,0 +1,39 @@
+#----------------------------------------------------------------------
+# HW-6 Test Program: More Struct Tests
+#----------------------------------------------------------------------
+
+struct T1 {
+  x: int, 
+  y: int
+}
+
+struct T2 {
+  t1: T1
+}
+
+struct T3 {
+  t2: T2
+}
+
+void main() {
+
+  var ref_1: T1 = new T1(0, 1)
+
+  print("Should be 0: ")
+  println(ref_1.x)
+  print("Should be 1: ")
+  println(ref_1.y)
+
+  var ref_2: T3 = new T3(null)
+  ref_2.t2 = new T2(null)
+  ref_2.t2.t1 = new T1(null, null)
+  ref_2.t2.t1.x = 5
+  ref_2.t2.t1.y = 3
+
+  print("Should be 5: ")
+  println(ref_2.t2.t1.x)
+
+  print("Should be 3: ")
+  println(ref_2.t2.t1.y)
+
+}
