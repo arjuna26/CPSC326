@@ -21,5 +21,21 @@ type expr = Int of int
  *
  * Evaluates a given expr.
  *)
+ let rec eval e =
+  match e with
+  | Int n -> n
+  | Plus (e1, e2) -> eval e1 + eval e2
+  | Minus (e1, e2) -> eval e1 - eval e2
+  | Times (e1, e2) -> eval e1 * eval e2
+  | Divide (e1, e2) -> eval e1 / eval e2
+  | Negate e1 -> -(eval e1)
+  | If (cond, then_e, else_e) ->
+      if eval cond <> 0 then eval then_e else eval else_e
+  | Iterate (n, f, e1) ->
+      let rec iter i acc =
+        if i = 0 then acc
+        else iter (i - 1) (f acc)
+      in
+      iter n (eval e1)
 
       
